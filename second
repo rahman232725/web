@@ -1,0 +1,132 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	<title>Time Table</title>
+</head>
+<style>
+body{padding:20px;
+}
+
+
+table {
+width:100%;
+border-collapse:collapse;
+}
+
+th,td	{
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+	}
+
+th 	{
+background-color:white;
+	}
+
+.lab-hours {
+background-color:pink;
+}
+.elective-hours {
+background-color: lightgreen;
+}
+.lunch {
+background-color:yellow;
+}
+.odd-row {
+background-color: green;
+}
+tfoot {
+background-color:lightgrey;
+font-weight: bold;
+}
+</style>
+
+
+<body>
+<table>
+<thead>
+<tr>
+	<th colspan="10">Class Time Table</th>
+</tr>
+
+<tr>
+<th>Day</th>
+<th>8.25-9.20</th>
+<th>9.20-10.15</th>
+<th>10.15-10.45</th>
+<th>10.45-11.40</th>
+<th>11.40-12.35</th>
+<th>12.35-1.30</th>
+<th>1.30-2.30</th>
+<th>2.30-3.25</th>
+<th>3.25-4.20</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<th>MON</th>
+<td class="elective-hours">AI</td>
+<td>TOC</td>
+<td class="lunch" rowspan="5">Break</td>
+<td>RM</td>
+<td class="lab-hours" colspan="2">CN LAB</td>
+<td class="lunch" rowspan="5">LUNCH </td>
+<td class="lab-hours" colspan="2">WEB LAB</td>
+</tr>
+<tr>
+<th>TUE</th>
+<td>SE</td>
+<td>CN</td>
+<td>RM</td>
+<td class="lab-hours" colspan="2">WEB LAB</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>WED</th>
+<td class="lab-hours" colspan="2">WEB LAB</td>
+<td>RM</td>
+<td>CN</td>
+<td class="elective-hours">AI</td>
+<td>TOC</td>
+<td>SE</td>
+</tr>
+<tr>
+<th>THU</th>
+<td colspan="2">SE</td>
+<td>TOC</td>
+<td class="elective-hours">AI</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>FRI</th>
+<td class="lab-hours" colspan="2">CN-LAB</td>
+<td>TOC</td>
+<td class="lab-hours" colspan="2">CN LAB</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<th>SAT </th>
+<td colspan="9">No Class</td>
+</tr>
+
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="10">* Lab hours are highlighted in pink, Elective hours in light 
+green, Break and Lunch in Yellow</td>
+</tr>
+</tfoot>
+
+</table>
+</body>
+</html>
